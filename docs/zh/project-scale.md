@@ -11,9 +11,9 @@
 
 | 版本 | 主要解的痛點 | 你要理解的核心角色 | 典型流程 | 何時該升級 |
 | --- | --- | --- | --- | --- |
-| [簡單版](../en/README.simple.md) | 先不要在沒對齊文件時直接寫 code | `REQ` `SPEC_STEP` `ADR` `CONTRACT` | `REQ -> SPEC_STEP -> PDR -> WC` | 同類錯誤開始重複、規格一直補洞 |
-| [普通版](../en/README.standard.md) | 把重複錯誤留下來，不再只靠人腦記 | `REQ` `SPEC_STEP` `ADR` `CONTRACT` `REFLECT` | `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT` | 多個 `REFLECT` 開始指向同一種結構問題 |
-| [進階版](../en/README.advanced.md) | 把重複事件升級成治理候選 | `REQ` `SPEC_STEP` `ADR` `CONTRACT` `REFLECT` `SUGGEST` | `REFLECT -> SUGGEST -> ADR / CONTRACT 提案` | 文件衝突已常阻斷開發，或需要正式批准 |
+| [簡單版](../en/README.simple.md) | 先不要在沒對齊文件時直接寫 code | `REQ` `SPEC` `ADR` `CONTRACT` | `REQ -> SPEC -> PDR -> WC` | 同類錯誤開始重複、規格一直補洞 |
+| [普通版](../en/README.standard.md) | 把重複錯誤留下來，不再只靠人腦記 | `REQ` `SPEC` `ADR` `CONTRACT` `REFLECT` | `REQ -> SPEC -> PDR -> WC -> REFLECT` | 多個 `REFLECT` 開始指向同一種結構問題 |
+| [進階版](../en/README.advanced.md) | 把重複事件升級成治理候選 | `REQ` `SPEC` `ADR` `CONTRACT` `REFLECT` `SUGGEST` | `REFLECT -> SUGGEST -> ADR / CONTRACT 提案` | 文件衝突已常阻斷開發，或需要正式批准 |
 | [專業版](../en/README.professional.md) | 在治理衝突下仍能維持可控開發 | 全部角色 + 人類批准 / 阻斷機制 | `SUGGEST -> 批准 -> ADR / CONTRACT 更新` 或 `衝突 -> 阻斷停機` | 這已是最高層，不再往上升，改做治理重整 |
 
 ## 怎麼選

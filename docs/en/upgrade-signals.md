@@ -16,7 +16,7 @@ The earliest requests are usually simple.
 
 Change one field, patch one API, adjust one flow node.
 
-At that stage, as long as `REQ`, `SPEC_STEP`, `ADR`, and `CONTRACT` stay aligned, work can usually finish safely.
+At that stage, as long as `REQ`, `SPEC`, `ADR`, and `CONTRACT` stay aligned, work can usually finish safely.
 
 That is the problem the [Simple README](../en/README.simple.md) is meant to solve.
 
@@ -36,7 +36,7 @@ This means the system has moved from local risk into structural risk.
 
 At that point, you at least need to decide whether you can still remain in the Simple version.
 
-If `REQ + SPEC_STEP + PDR` is still enough to control the risk, you may stay where you are.
+If `REQ + SPEC + PDR` is still enough to control the risk, you may stay where you are.
 If the team starts repeatedly patching holes, it usually begins moving toward Standard.
 
 ## Signal 2: The Same Problem Keeps Returning
@@ -53,7 +53,7 @@ You need to start preserving experience so errors are not only repaired, but rem
 
 That is the starting point of the [Standard README](../en/README.standard.md):
 
-- `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT`
+- `REQ -> SPEC -> PDR -> WC -> REFLECT`
 
 The point is not to add process for its own sake.
 
@@ -63,13 +63,13 @@ The point is to stop the team from relying only on human memory to preserve less
 
 For example:
 
-- `REQ` says one thing while `SPEC_STEP` does another
+- `REQ` says one thing while `SPEC` does another
 - `ADR` is not updated, but the actual direction has already drifted
 - `CONTRACT` is not written clearly enough, so everyone interprets it differently
 
 This is exactly the situation `PDR` is supposed to handle:
 
-before implementation, check whether `REQ / SPEC_STEP / ADR / CONTRACT` are still aligned.
+before implementation, check whether `REQ / SPEC / ADR / CONTRACT` are still aligned.
 
 If this drift is no longer a one-off but multiple events keep pointing to the same structural issue, then staying in Standard is often no longer enough.
 

@@ -18,15 +18,15 @@ Each role answers one kind of question. Once those questions are mixed together,
 
 It is the source of requirement truth.
 
-## `SPEC_STEP`
+## `SPEC`
 
-`SPEC_STEP` defines:
+`SPEC` defines:
 
 - how this work should be executed
 - what the execution steps are
 - what the concrete delivery path is
 
-`SPEC_STEP` is where implementation becomes an executable path.
+`SPEC` is where implementation becomes an executable path.
 
 It must stay aligned with `REQ`, `ADR`, and `CONTRACT`.
 
@@ -105,8 +105,8 @@ If you do separate them well:
 When conflict appears, trust order decides which document takes priority:
 
 ```text
-CONTRACT > ADR > REQ > SPEC_STEP
-SPEC_STEP > REFLECT > SUGGEST
+CONTRACT > ADR > REQ > SPEC
+SPEC > REFLECT > SUGGEST
 ```
 
 This structure places formal governance above local execution, and places experience below approved rules until that experience is explicitly upgraded.

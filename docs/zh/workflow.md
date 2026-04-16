@@ -18,7 +18,7 @@ AxiomFlow 的核心，是一個受治理約束的執行循環。
 
 `PDR` 要檢查的是：
 
-- `SPEC_STEP` 是否偏離 `REQ`
+- `SPEC` 是否偏離 `REQ`
 - 實作方向是否符合 `ADR`
 - 任何規則是否踩到 `CONTRACT`
 - 文件之間是否出現衝突、漂移或關鍵缺口
@@ -73,7 +73,7 @@ AxiomFlow 的核心，是一個受治理約束的執行循環。
 ## 完整循環
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> GG -> GU
+REQ -> SPEC -> PDR -> WC -> REFLECT -> GG -> GU
 ```
 
 這會形成一個系統：當前真相約束當前實作，而新的經驗可以改善未來真相，但不能繞過批准。

@@ -55,7 +55,7 @@ When a system delegates large amounts of decision-making power to agents, whethe
 In this model, alignment is not an abstract slogan. It is concretely distributed across document roles:
 
 - `REQ` aligns the problem and scope
-- `SPEC_STEP` aligns the execution path
+- `SPEC` aligns the execution path
 - `ADR` aligns architectural direction
 - `CONTRACT` aligns non-negotiable boundaries
 

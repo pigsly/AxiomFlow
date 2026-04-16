@@ -16,7 +16,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 ## Active Roles
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 - `REFLECT`
@@ -29,7 +29,7 @@ sequenceDiagram
     actor Human
     participant REFLECT
     participant SUGGEST
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -49,7 +49,7 @@ sequenceDiagram
 
 - `PDR` becomes a governance gate, not just a pre-work review
 - `SUGGEST` can propose but cannot activate
-- any inconsistency across `REQ`, `SPEC_STEP`, `ADR`, and `CONTRACT` becomes a stop condition
+- any inconsistency across `REQ`, `SPEC`, `ADR`, and `CONTRACT` becomes a stop condition
 - human approval is required before `GU`
 
 ## When Professional Fits

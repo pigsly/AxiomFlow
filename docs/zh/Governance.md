@@ -6,7 +6,7 @@
 這些規則適用於 repository 中使用的治理文件類型：
 
 - `REQ`：需求文件
-- `SPEC_STEP`：實作步驟文件
+- `SPEC`：實作步驟文件
 - `ADR`：架構決策記錄
 - `CONTRACT`：邊界與介面契約
 - `REFLECT`：經驗、事件與教訓記錄
@@ -14,8 +14,8 @@
 
 補充規則：
 
-- `REQ` 與 `SPEC_STEP` 是 agent 執行時的主要輸入。
-- `SPEC_STEP` 可以使用 `code_implement` 追蹤實作狀態。
+- `REQ` 與 `SPEC` 是 agent 執行時的主要輸入。
+- `SPEC` 可以使用 `code_implement` 追蹤實作狀態。
 - `ADR` 與 `CONTRACT` 在同一時間都只允許一份正式主文件。
 
 ## 2. 文件角色
@@ -24,7 +24,7 @@
 
 定義需求、目標、範圍與預期結果。
 
-### `SPEC_STEP`
+### `SPEC`
 
 定義具體的實作步驟與執行細節。
 
@@ -50,7 +50,7 @@
 
 儲存經過人類檢視的經驗，包括錯誤、事件、觀察與執行經驗。
 
-`REFLECT` 預設應與 `SPEC_STEP` 對齊，不應直接改寫 `REQ`。
+`REFLECT` 預設應與 `SPEC` 對齊，不應直接改寫 `REQ`。
 
 ### `SUGGEST`
 
@@ -63,8 +63,8 @@
 當文件衝突時，預設 trust order 如下：
 
 ```text
-CONTRACT > ADR > REQ > SPEC_STEP
-SPEC_STEP > REFLECT > SUGGEST
+CONTRACT > ADR > REQ > SPEC
+SPEC > REFLECT > SUGGEST
 ```
 
 解讀：
@@ -72,7 +72,7 @@ SPEC_STEP > REFLECT > SUGGEST
 - `CONTRACT` 是最高優先級的硬約束
 - `ADR` 定義當前方向
 - `REQ` 定義需求範圍
-- `SPEC_STEP` 定義執行路徑
+- `SPEC` 定義執行路徑
 - `REFLECT` 是證據來源
 - `SUGGEST` 是提案來源
 
@@ -109,13 +109,13 @@ SPEC_STEP > REFLECT > SUGGEST
 - 產碼
 - 文件更新
 
-`PDR` 同時是前置審查與治理分流點。它用來判斷這個問題應停留在 `REQ` 或 `SPEC_STEP` 層級，還是要升級到 `REFLECT`、`SUGGEST`、`ADR` 或 `CONTRACT`。
+`PDR` 同時是前置審查與治理分流點。它用來判斷這個問題應停留在 `REQ` 或 `SPEC` 層級，還是要升級到 `REFLECT`、`SUGGEST`、`ADR` 或 `CONTRACT`。
 
 ### Requirement 與 Spec 檢查
 
-- 檢查 `SPEC_STEP` 是否違反 `REQ`
-- 檢查 `REQ` 與 `SPEC_STEP` 是否有缺口或漂移
-- 在 `SPEC_STEP/` 下，`SPEC-XXX.md` 是實作規格，`SPEC_Catalogue.md` 是已完成規格索引
+- 檢查 `SPEC` 是否違反 `REQ`
+- 檢查 `REQ` 與 `SPEC` 是否有缺口或漂移
+- 在 `SPEC/` 下，`SPEC-XXX.md` 是實作規格，`SPEC_Catalogue.md` 是已完成規格索引
 - 只有 `code_implement: done` 的 `SPEC-XXX.md` 才能進入 `SPEC_Catalogue.md`
 - `code_implement` 合法狀態是 `todo`、`dev`、`done`、`blocked`
 - `SUG-YYYYMMDDHHMI.md` 必須列出來源 `REFLECT-XXX.md`
@@ -126,7 +126,7 @@ SPEC_STEP > REFLECT > SUGGEST
 - 檢查實作方向是否符合 `ADR`
 - 如果引用了輔助 ADR，檢查它們是否仍與主 `ADR` 對齊
 - 檢查工作是否違反 `CONTRACT`
-- 檢查 `ADR`、`CONTRACT` 與 `SPEC_STEP` 是否互相衝突，或留下不清楚的邊界
+- 檢查 `ADR`、`CONTRACT` 與 `SPEC` 是否互相衝突，或留下不清楚的邊界
 
 ## 6. 衝突處理規則
 
@@ -173,8 +173,8 @@ SPEC_STEP > REFLECT > SUGGEST
 ## 7. 實作限制
 
 - 不得產出違反 `CONTRACT`、`ADR` 的內容
-- 不得在 `REQ`、`ADR`、`SPEC_STEP` 未覆蓋的情況下，自行擴張範圍
-- 當細節未被 `REQ` 或 `SPEC_STEP` 覆蓋時，預設依循相關 `ADR`
+- 不得在 `REQ`、`ADR`、`SPEC` 未覆蓋的情況下，自行擴張範圍
+- 當細節未被 `REQ` 或 `SPEC` 覆蓋時，預設依循相關 `ADR`
 - 若 `ADR` 與 `CONTRACT` 已明確限制方向，不得用使用者臨時語句直接覆蓋
 
 ## 8. 重要維運命令

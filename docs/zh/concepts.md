@@ -15,15 +15,15 @@ AxiomFlow 的做法，是把專案真相拆進不同文件角色裡。
 
 `REQ` 不是實作計畫。它是需求真相的來源。
 
-## `SPEC_STEP`
+## `SPEC`
 
-`SPEC_STEP` 定義的是：
+`SPEC` 定義的是：
 
 - 這份工作要怎麼落地
 - 執行步驟有哪些
 - 具體交付路徑是什麼
 
-`SPEC_STEP` 是把實作變成可執行路徑的地方。它必須和 `REQ`、`ADR`、`CONTRACT` 保持對齊。
+`SPEC` 是把實作變成可執行路徑的地方。它必須和 `REQ`、`ADR`、`CONTRACT` 保持對齊。
 
 ## `ADR`
 
@@ -96,8 +96,8 @@ AxiomFlow 的做法，是把專案真相拆進不同文件角色裡。
 出現衝突時，要靠 trust order 決定哪份文件優先：
 
 ```text
-CONTRACT > ADR > REQ > SPEC_STEP
-SPEC_STEP > REFLECT > SUGGEST
+CONTRACT > ADR > REQ > SPEC
+SPEC > REFLECT > SUGGEST
 ```
 
 這個結構把正式治理放在局部執行之上，也把經驗放在已批准規則之下，直到它被明確升級為止。

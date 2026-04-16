@@ -14,7 +14,7 @@
 最早的需求都很單純。
 改一個欄位，補一個 API，調整一個流程節點。
 
-這時只要 `REQ`、`SPEC_STEP`、`ADR`、`CONTRACT` 對齊，事情通常就能安全完成。
+這時只要 `REQ`、`SPEC`、`ADR`、`CONTRACT` 對齊，事情通常就能安全完成。
 
 這是[簡單版 README](../en/README.simple.md)想解的問題。
 
@@ -34,7 +34,7 @@
 
 這時你至少要先判斷，自己還能不能停留在簡單版。
 
-如果 `REQ + SPEC_STEP + PDR` 還足以控制風險，可以先不升。
+如果 `REQ + SPEC + PDR` 還足以控制風險，可以先不升。
 如果開始反覆補洞，通常就會往普通版走。
 
 ## 訊號 2：同樣問題反覆出現
@@ -51,7 +51,7 @@
 
 這就是[普通版 README](../en/README.standard.md)的起點：
 
-- `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT`
+- `REQ -> SPEC -> PDR -> WC -> REFLECT`
 
 重點不是增加流程感，而是讓團隊不再只靠人腦保存教訓。
 
@@ -59,13 +59,13 @@
 
 例如：
 
-- `REQ` 說一套，`SPEC_STEP` 做另一套
+- `REQ` 說一套，`SPEC` 做另一套
 - `ADR` 沒更新，但實際方向已經偏移
 - `CONTRACT` 沒寫清楚，大家各自理解
 
 這就是 `PDR` 真正要處理的場景：
 
-在實作前，先檢查 `REQ / SPEC_STEP / ADR / CONTRACT` 是否還對齊。
+在實作前，先檢查 `REQ / SPEC / ADR / CONTRACT` 是否還對齊。
 
 如果這種分離已經不只是一兩次，而是多個事件反覆指向同一個結構問題，就不該只停留在普通版。
 

@@ -15,7 +15,7 @@
 ## 啟用角色
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 - `REFLECT`
@@ -26,7 +26,7 @@
 sequenceDiagram
     actor Human
     participant REQ
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -45,14 +45,14 @@ sequenceDiagram
 
 - `PDR` 變成必要條件
 - `REFLECT` 成為正常流程的一部分
-- 主要路徑變成 `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT`
+- 主要路徑變成 `REQ -> SPEC -> PDR -> WC -> REFLECT`
 
 ## 什麼時候普通版適合
 
 留在這一版，當：
 
 - 同一類 bug 已經不是第一次出現
-- 某些 `SPEC_STEP` 一直需要補洞
+- 某些 `SPEC` 一直需要補洞
 - 某些重複工作很容易被誤解
 - 團隊需要可保存的經驗，而不是只靠聊天記憶
 

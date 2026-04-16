@@ -16,7 +16,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 ## Active Roles
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 
@@ -26,7 +26,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 sequenceDiagram
     actor Human
     participant REQ
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -45,7 +45,7 @@ sequenceDiagram
 ## What You Need
 
 - one active `REQ`
-- one executable `SPEC_STEP`
+- one executable `SPEC`
 - one active `ADR`
 - one active `CONTRACT`
 - `PDR` before each execution
@@ -55,7 +55,7 @@ sequenceDiagram
 Stay here when:
 
 - most changes are local to one module
-- `REQ + SPEC_STEP` is enough to describe the work
+- `REQ + SPEC` is enough to describe the work
 - `ADR` and `CONTRACT` act mainly as guardrails
 - repeated mistakes have not become a pattern
 

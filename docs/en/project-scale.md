@@ -12,9 +12,9 @@ If you are still not sure why versions need to upgrade, read [Upgrade Signals](.
 
 | Version | Main problem it solves | Core roles you need to understand | Typical flow | When to upgrade |
 | --- | --- | --- | --- | --- |
-| [Simple](../en/README.simple.md) | Do not start writing code before documents are aligned | `REQ` `SPEC_STEP` `ADR` `CONTRACT` | `REQ -> SPEC_STEP -> PDR -> WC` | the same mistakes begin to repeat, or specs keep needing patches |
-| [Standard](../en/README.standard.md) | Preserve repeated mistakes instead of relying on memory alone | `REQ` `SPEC_STEP` `ADR` `CONTRACT` `REFLECT` | `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT` | multiple `REFLECT` entries begin pointing to the same structural issue |
-| [Advanced](../en/README.advanced.md) | Turn repeated events into governance candidates | `REQ` `SPEC_STEP` `ADR` `CONTRACT` `REFLECT` `SUGGEST` | `REFLECT -> SUGGEST -> ADR / CONTRACT proposal` | document conflict often blocks development, or formal approval is needed |
+| [Simple](../en/README.simple.md) | Do not start writing code before documents are aligned | `REQ` `SPEC` `ADR` `CONTRACT` | `REQ -> SPEC -> PDR -> WC` | the same mistakes begin to repeat, or specs keep needing patches |
+| [Standard](../en/README.standard.md) | Preserve repeated mistakes instead of relying on memory alone | `REQ` `SPEC` `ADR` `CONTRACT` `REFLECT` | `REQ -> SPEC -> PDR -> WC -> REFLECT` | multiple `REFLECT` entries begin pointing to the same structural issue |
+| [Advanced](../en/README.advanced.md) | Turn repeated events into governance candidates | `REQ` `SPEC` `ADR` `CONTRACT` `REFLECT` `SUGGEST` | `REFLECT -> SUGGEST -> ADR / CONTRACT proposal` | document conflict often blocks development, or formal approval is needed |
 | [Professional](../en/README.professional.md) | Keep development controllable even under governance conflict | all roles + human approval / blocking mechanism | `SUGGEST -> approval -> ADR / CONTRACT update` or `conflict -> blocked stop` | this is already the highest level; instead of upgrading further, governance itself needs redesign |
 
 ## How to Choose

@@ -15,13 +15,13 @@ With this loop, the system becomes a governance engine.
 The minimum loop looks like this:
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> SUGGEST -> GU -> ADR / CONTRACT
+REQ -> SPEC -> PDR -> WC -> REFLECT -> SUGGEST -> GU -> ADR / CONTRACT
 ```
 
 Each step has its own job:
 
 - `REQ` defines what problem must be solved
-- `SPEC_STEP` defines how the work should be done
+- `SPEC` defines how the work should be done
 - `PDR` checks whether the plan is aligned before execution
 - `WC` implements only after alignment is confirmed
 - `REFLECT` records meaningful experience from execution
@@ -93,7 +93,7 @@ This model actually contains two loops running at different speeds.
 The fast loop handles daily delivery:
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC
+REQ -> SPEC -> PDR -> WC
 ```
 
 Its job is to control execution quality.

@@ -14,13 +14,13 @@ AxiomFlow 不只是文件模型。
 最小閉環長這樣：
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> SUGGEST -> GU -> ADR / CONTRACT
+REQ -> SPEC -> PDR -> WC -> REFLECT -> SUGGEST -> GU -> ADR / CONTRACT
 ```
 
 每一步各有自己的工作：
 
 - `REQ` 定義要解什麼問題
-- `SPEC_STEP` 定義工作要怎麼做
+- `SPEC` 定義工作要怎麼做
 - `PDR` 在執行前檢查計畫是否對齊
 - `WC` 只在對齊確認後才進行實作
 - `REFLECT` 記錄執行中有意義的經驗
@@ -90,7 +90,7 @@ REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> SUGGEST -> GU -> ADR / CONTRACT
 快迴路處理的是日常交付：
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC
+REQ -> SPEC -> PDR -> WC
 ```
 
 它的工作，是控制執行品質。

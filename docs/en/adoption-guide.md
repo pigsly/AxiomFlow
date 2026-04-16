@@ -11,7 +11,7 @@ Do not begin by turning it into a full documentation bureaucracy.
 Start by building the smallest governance surface that is still enough to block unsafe execution:
 
 - one `REQ`
-- one `SPEC_STEP`
+- one `SPEC`
 - one `ADR`
 - one `CONTRACT`
 
@@ -44,7 +44,7 @@ Once the minimum document set exists, start enforcing stop rules.
 
 The team must agree that execution stops whenever any of the following happens:
 
-- `SPEC_STEP` conflicts with `REQ`
+- `SPEC` conflicts with `REQ`
 - implementation direction conflicts with `ADR`
 - proposed work violates `CONTRACT`
 - key information is missing

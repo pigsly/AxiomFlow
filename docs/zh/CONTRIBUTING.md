@@ -22,7 +22,7 @@
 
 如果你要改動會影響治理模型本身的內容，先檢查：
 
-- 這個改動是否改變了 `REQ`、`SPEC_STEP`、`ADR`、`CONTRACT`、`REFLECT` 或 `SUGGEST` 的意義
+- 這個改動是否改變了 `REQ`、`SPEC`、`ADR`、`CONTRACT`、`REFLECT` 或 `SUGGEST` 的意義
 - 這個改動是否影響 trust order
 - 這個改動是否改變了停機條件或批准邊界
 - 這個改動應該被表達成範例、導讀，還是治理提案

@@ -7,7 +7,7 @@
 These rules apply to the governance document types used in the repository:
 
 - `REQ`: requirement documents
-- `SPEC_STEP`: implementation-step documents
+- `SPEC`: implementation-step documents
 - `ADR`: architecture decision records
 - `CONTRACT`: boundary and interface contracts
 - `REFLECT`: records of lessons, incidents, and execution experience
@@ -15,8 +15,8 @@ These rules apply to the governance document types used in the repository:
 
 Additional rules:
 
-- `REQ` and `SPEC_STEP` are the primary inputs during agent execution.
-- `SPEC_STEP` may use `code_implement` to track implementation status.
+- `REQ` and `SPEC` are the primary inputs during agent execution.
+- `SPEC` may use `code_implement` to track implementation status.
 - `ADR` and `CONTRACT` each allow only one formal primary document at a time.
 
 ## 2. Document Roles
@@ -25,7 +25,7 @@ Additional rules:
 
 Defines the requirement, goal, scope, and expected result.
 
-### `SPEC_STEP`
+### `SPEC`
 
 Defines the concrete implementation steps and execution details.
 
@@ -51,7 +51,7 @@ Defines hard boundaries that remain valid across milestones, especially:
 
 Stores human-reviewed lessons, including mistakes, incidents, observations, and execution experience.
 
-`REFLECT` should align with `SPEC_STEP` by default, and should not directly rewrite `REQ`.
+`REFLECT` should align with `SPEC` by default, and should not directly rewrite `REQ`.
 
 ### `SUGGEST`
 
@@ -64,8 +64,8 @@ Abstracts repeated patterns from multiple `REFLECT` entries and evaluates whethe
 When documents conflict, the default trust order is:
 
 ```text
-CONTRACT > ADR > REQ > SPEC_STEP
-SPEC_STEP > REFLECT > SUGGEST
+CONTRACT > ADR > REQ > SPEC
+SPEC > REFLECT > SUGGEST
 ```
 
 Interpretation:
@@ -73,7 +73,7 @@ Interpretation:
 - `CONTRACT` is the highest-priority hard constraint
 - `ADR` defines the current direction
 - `REQ` defines requirement scope
-- `SPEC_STEP` defines the execution path
+- `SPEC` defines the execution path
 - `REFLECT` is an evidence source
 - `SUGGEST` is a proposal source
 
@@ -110,13 +110,13 @@ Interpretation:
 - code generation
 - document updates
 
-`PDR` is both a pre-work review and a governance routing point. It is used to decide whether the issue should remain at the `REQ` or `SPEC_STEP` level, or be escalated into `REFLECT`, `SUGGEST`, `ADR`, or `CONTRACT`.
+`PDR` is both a pre-work review and a governance routing point. It is used to decide whether the issue should remain at the `REQ` or `SPEC` level, or be escalated into `REFLECT`, `SUGGEST`, `ADR`, or `CONTRACT`.
 
 ### Requirement and Spec Checks
 
-- check whether `SPEC_STEP` violates `REQ`
-- check whether `REQ` and `SPEC_STEP` contain gaps or drift
-- under `SPEC_STEP/`, `SPEC-XXX.md` files are implementation specs and `SPEC_Catalogue.md` is the index of completed specs
+- check whether `SPEC` violates `REQ`
+- check whether `REQ` and `SPEC` contain gaps or drift
+- under `SPEC/`, `SPEC-XXX.md` files are implementation specs and `SPEC_Catalogue.md` is the index of completed specs
 - only `SPEC-XXX.md` files with `code_implement: done` may enter `SPEC_Catalogue.md`
 - valid `code_implement` states are `todo`, `dev`, `done`, and `blocked`
 - `SUG-YYYYMMDDHHMI.md` must list its source `REFLECT-XXX.md` files
@@ -127,7 +127,7 @@ Interpretation:
 - check whether the implementation direction follows `ADR`
 - if supporting ADR files are referenced, check whether they still align with the primary `ADR`
 - check whether the work violates `CONTRACT`
-- check whether `ADR`, `CONTRACT`, and `SPEC_STEP` conflict with each other or leave unclear boundaries
+- check whether `ADR`, `CONTRACT`, and `SPEC` conflict with each other or leave unclear boundaries
 
 ## 6. Conflict Handling Rules
 
@@ -174,8 +174,8 @@ If `SPEC-XXX.md` has already been marked `blocked`, it may be unblocked only aft
 ## 7. Implementation Limits
 
 - do not produce output that violates `CONTRACT` or `ADR`
-- do not expand scope on your own when `REQ`, `ADR`, or `SPEC_STEP` do not cover it
-- when details are not covered by `REQ` or `SPEC_STEP`, follow the relevant `ADR` by default
+- do not expand scope on your own when `REQ`, `ADR`, or `SPEC` do not cover it
+- when details are not covered by `REQ` or `SPEC`, follow the relevant `ADR` by default
 - if `ADR` and `CONTRACT` already place explicit directional limits, user ad hoc phrasing must not override them directly
 
 ## 8. Important Operational Commands

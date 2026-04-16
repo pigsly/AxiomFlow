@@ -24,7 +24,7 @@ Use this short path if you are new to the repo.
 Each document answers one question:
 
 - `REQ`: what problem must be solved
-- `SPEC_STEP`: how the work will be done
+- `SPEC`: how the work will be done
 - `ADR`: why the architecture is taking this direction
 - `CONTRACT`: which boundaries must not be crossed
 - `REFLECT`: which lessons are worth keeping

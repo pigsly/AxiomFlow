@@ -16,7 +16,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 ## Active Roles
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 - `REFLECT`

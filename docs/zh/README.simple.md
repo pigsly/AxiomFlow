@@ -16,7 +16,7 @@
 ## 啟用角色
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 
@@ -26,7 +26,7 @@
 sequenceDiagram
     actor Human
     participant REQ
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -45,7 +45,7 @@ sequenceDiagram
 ## 你需要什麼
 
 - 一份有效的 `REQ`
-- 一份可執行的 `SPEC_STEP`
+- 一份可執行的 `SPEC`
 - 一份有效的 `ADR`
 - 一份有效的 `CONTRACT`
 - 每次執行前都先跑 `PDR`
@@ -55,7 +55,7 @@ sequenceDiagram
 留在這一版，當：
 
 - 多數改動都還是單一模組內的局部修改
-- `REQ + SPEC_STEP` 已足夠描述工作
+- `REQ + SPEC` 已足夠描述工作
 - `ADR` 和 `CONTRACT` 主要還是在當護欄
 - 重複錯誤還沒有形成模式
 

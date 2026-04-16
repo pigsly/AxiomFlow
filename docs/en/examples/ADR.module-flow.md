@@ -18,7 +18,7 @@ Expand the primary ADR with one module-level component flow.
 
 ```mermaid
 flowchart LR
-    REQ[REQ Input] --> SPEC[SPEC_STEP Planning]
+    REQ[REQ Input] --> SPEC[SPEC Planning]
     SPEC --> PDR[PDR Check]
     PDR --> WC[WC Execution]
     WC --> RESULT[Module Output]

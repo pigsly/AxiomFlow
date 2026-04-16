@@ -19,7 +19,7 @@ It must happen before all of the following:
 
 `PDR` checks:
 
-- whether `SPEC_STEP` has drifted from `REQ`
+- whether `SPEC` has drifted from `REQ`
 - whether the implementation direction follows `ADR`
 - whether any rule would violate `CONTRACT`
 - whether documents contain conflict, drift, or critical gaps
@@ -78,7 +78,7 @@ Once approved, `GU` updates the formal `ADR` or `CONTRACT`, and marks the status
 ## Full Loop
 
 ```text
-REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> GG -> GU
+REQ -> SPEC -> PDR -> WC -> REFLECT -> GG -> GU
 ```
 
 This forms a system: current truth constrains current implementation, while new experience can improve future truth, but never bypass approval.

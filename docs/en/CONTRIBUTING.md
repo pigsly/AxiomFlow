@@ -22,7 +22,7 @@ Useful contributions include:
 
 Before changing material that affects the governance model itself, check:
 
-- whether the change alters the meaning of `REQ`, `SPEC_STEP`, `ADR`, `CONTRACT`, `REFLECT`, or `SUGGEST`
+- whether the change alters the meaning of `REQ`, `SPEC`, `ADR`, `CONTRACT`, `REFLECT`, or `SUGGEST`
 - whether the change affects trust order
 - whether the change changes stop conditions or approval boundaries
 - whether the change should be represented as an example, a guide, or a governance proposal

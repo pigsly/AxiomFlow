@@ -16,7 +16,7 @@
 ## 啟用角色
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 - `REFLECT`
@@ -29,7 +29,7 @@ sequenceDiagram
     actor Human
     participant REFLECT
     participant SUGGEST
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -49,7 +49,7 @@ sequenceDiagram
 
 - `PDR` 不再只是前置審查，而是治理閘門
 - `SUGGEST` 可以提案，但不能自行生效
-- `REQ`、`SPEC_STEP`、`ADR`、`CONTRACT` 之間任何不一致都會變成停機條件
+- `REQ`、`SPEC`、`ADR`、`CONTRACT` 之間任何不一致都會變成停機條件
 - `GU` 前必須有人類批准
 
 ## 什麼時候專業版適合

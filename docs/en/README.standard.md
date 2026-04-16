@@ -15,7 +15,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 ## Active Roles
 
 - `REQ`
-- `SPEC_STEP`
+- `SPEC`
 - `ADR`
 - `CONTRACT`
 - `REFLECT`
@@ -26,7 +26,7 @@ If you are unsure, read [Upgrade Signals](./upgrade-signals.md) and focus on Sig
 sequenceDiagram
     actor Human
     participant REQ
-    participant SPEC as SPEC_STEP
+    participant SPEC as SPEC
     participant ADR
     participant CONTRACT
     participant Agent
@@ -45,14 +45,14 @@ sequenceDiagram
 
 - `PDR` is mandatory
 - `REFLECT` becomes part of the normal loop
-- the main path is `REQ -> SPEC_STEP -> PDR -> WC -> REFLECT`
+- the main path is `REQ -> SPEC -> PDR -> WC -> REFLECT`
 
 ## When Standard Fits
 
 Stay here when:
 
 - the same bug has happened more than once
-- some `SPEC_STEP` files keep needing patches
+- some `SPEC` files keep needing patches
 - a repeated task is easy to misunderstand
 - the team needs durable lessons, not chat-only memory
 
