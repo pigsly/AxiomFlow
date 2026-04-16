@@ -17,7 +17,6 @@ AxiomFlow 是一套面向 AI 輔助軟體交付的治理模型。
 
 - [English README](./README.md)
 - [快速開始](./docs/zh/getting-started.md)
-- [怎麼跟 Codex 合作](./docs/zh/how-to-work-with-codex.md)
 - [版本指南](./docs/zh/project-scale.md)
 - [升級訊號](./docs/zh/upgrade-signals.md)
 
@@ -44,7 +43,6 @@ AxiomFlow 是一套面向 AI 輔助軟體交付的治理模型。
 ## 依主題閱讀
 
 - 從 repo setup 開始：[Getting Started](./docs/zh/getting-started.md)
-- 先理解怎麼和 agent 合作：[How to Work with Codex](./docs/zh/how-to-work-with-codex.md)
 - 了解文件角色分工：[核心概念](./docs/zh/concepts.md)
 - 看執行流程怎麼運作：[Workflow](./docs/zh/workflow.md)
 - 了解什麼情況必須停機：[Conflict Handling](./docs/zh/conflict-handling.md)

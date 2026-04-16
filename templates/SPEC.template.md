@@ -1,26 +1,23 @@
-# SPEC-XXX
+---
+id: SPEC-001
+title: [實作任務名稱]
+related_req: REQ-001 # 關連的需求編號
+related_adr: ADR
+related_contract: CONTRACT
+code_implement: todo | dev | done | blocked
+target_files:
+  - ...
+  - ...
+---
 
-code_implement: todo
+## 1. Goal
 
-## Title
+簡述此步驟完成後的預期狀態。
 
-Describe the implementation objective in one sentence.
+## 2. Steps
 
-## Related Requirement
 
-- REQ-XXX
+## 3. Verification
 
-## Steps
-
-1. Describe the implementation step.
-2. Describe the next implementation step.
-3. Describe the final implementation step.
-
-## Output
-
-Describe the concrete result this SPEC should produce.
-
-## Alignment Notes
-
-- note any dependency on `ADR`
-- note any relevant `CONTRACT` boundary
+- [ ] 單元測試：
+- [ ] 整合測試：

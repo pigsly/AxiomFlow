@@ -16,7 +16,6 @@ Use this short path if you are new to the repo.
 
 - [中文 README](./README.zh.md)
 - [Getting Started](./docs/en/getting-started.md)
-- [How to Work with Codex](./docs/en/how-to-work-with-codex.md)
 - [Version Guide](./docs/en/project-scale.md)
 - [Upgrade Signals](./docs/en/upgrade-signals.md)
 
@@ -43,7 +42,6 @@ Use only the roles you need for the current stage.
 ## Read by Topic
 
 - Start the repo setup: [Getting Started](./docs/en/getting-started.md)
-- Learn how to prompt and constrain the agent: [How to Work with Codex](./docs/en/how-to-work-with-codex.md)
 - Understand the document roles: [Core Concepts](./docs/en/concepts.md)
 - See the execution loop: [Workflow](./docs/en/workflow.md)
 - Learn when work must stop: [Conflict Handling](./docs/en/conflict-handling.md)
