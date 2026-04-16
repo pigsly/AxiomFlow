@@ -2,39 +2,37 @@
 
 [中文](../zh/workflow.md)
 
-AxiomFlow uses a governed execution loop. The loop does three things:
+The core of AxiomFlow is a governance-constrained execution loop.
 
-- verify alignment before work
-- keep useful lessons after work
-- require approval before governance changes
+This loop does three things only: verify alignment before execution, preserve lessons after execution, and require approval before governance is upgraded.
 
 ## 1. `PDR`
 
 `PDR` means Pre-Development Review.
 
-Run it before:
+It must happen before all of the following:
 
 - analysis
 - design
 - code generation
 - document updates
 
-Check:
+`PDR` checks:
 
-- whether `SPEC_STEP` matches `REQ`
-- whether the implementation follows `ADR`
-- whether any rule violates `CONTRACT`
-- whether documents conflict, drift, or omit key information
+- whether `SPEC_STEP` has drifted from `REQ`
+- whether the implementation direction follows `ADR`
+- whether any rule would violate `CONTRACT`
+- whether documents contain conflict, drift, or critical gaps
 
-If `PDR` fails, do not continue.
+If `PDR` does not pass, execution must not continue.
 
 ## 2. `WC`
 
 `WC` means Write Code.
 
-Run `WC` only after `PDR` passes. Use the relevant `SPEC-XXX.md` as the implementation guide.
+Only after `PDR` passes may work enter `WC`. `WC` implements according to `SPEC-XXX.md`.
 
-If the `SPEC` has a `code_implement` field, keep the status current:
+If the related `SPEC` has a `code_implement` field, its status should reflect implementation progress, for example:
 
 - `todo`
 - `dev`
@@ -43,38 +41,52 @@ If the `SPEC` has a `code_implement` field, keep the status current:
 
 ## 3. `REFLECT`
 
-After meaningful work, record lessons in `REFLECT`.
+After meaningful work, errors, events, or findings, write the lessons into `REFLECT`.
 
-Examples:
+For example:
 
 - a bug pattern worth remembering
-- a repeated execution mistake
-- a failed design assumption
-- a `SPEC` misunderstanding that caused rework
+- repeated execution mistakes
+- a design assumption that was proven wrong
+- a misunderstanding of `SPEC` that caused rework
 
-Do not record everything. Record events that should change future behavior.
+Not everything should be recorded.
+
+Only meaningful events are worth preserving as long-term experience.
 
 ## 4. `GG`
 
 `GG` produces `SUGGEST`.
 
-Its job is to find repeated patterns in `REFLECT` and decide whether they should become formal governance:
+Its purpose is to inspect repeated patterns in `REFLECT` and judge whether those lessons should be upgraded into formal governance:
 
 - `ADR`
 - `CONTRACT`
 
-`SUGGEST` is a proposal, not an active rule.
+But `SUGGEST` is still not formal governance.
+
+It is only a proposal.
 
 ## 5. `GU`
 
 `GU` means Governance Upgrade.
 
-It happens only after human approval.
+This step can happen only after human approval.
 
-When approved, `GU` updates the formal `ADR` or `CONTRACT` and marks related proposals and evidence according to the governance rules.
+Once approved, `GU` updates the formal `ADR` or `CONTRACT`, and marks the status of related proposals and evidence according to governance rules.
 
 ## Full Loop
 
 ```text
 REQ -> SPEC_STEP -> PDR -> WC -> REFLECT -> GG -> GU
 ```
+
+This forms a system: current truth constrains current implementation, while new experience can improve future truth, but never bypass approval.
+
+## What Is Actually Different About This Workflow
+
+Most development workflows optimize throughput.
+
+This workflow optimizes controllable throughput.
+
+When agent speed is already fast enough to amplify errors together with progress, that difference becomes important.

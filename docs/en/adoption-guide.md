@@ -2,72 +2,120 @@
 
 [中文](../zh/adoption-guide.md)
 
-This page explains how to introduce AxiomFlow to a real team without rebuilding the whole process at once.
+This document is about how to bring AxiomFlow into a real team, instead of trying to rebuild the whole management system on day one.
 
 ## Start Small
 
-Do not begin with a full documentation bureaucracy.
+Do not begin by turning it into a full documentation bureaucracy.
 
-Start with the minimum governance surface that can stop unsafe work:
+Start by building the smallest governance surface that is still enough to block unsafe execution:
 
 - one `REQ`
 - one `SPEC_STEP`
 - one `ADR`
 - one `CONTRACT`
 
-This is enough to define:
+That is already enough to establish:
 
-- what to build
-- how to build it
-- where architecture is going
+- what needs to be done
+- how the work should be done
+- where the architecture is going
 - which boundaries must not be crossed
 
-## Phase 1: Build Control First
+## Phase 1: Build Control First, Then Talk About Expansion
 
-The first goal is control, not completeness.
+The first goal is not completeness.
+
+The first goal is control.
 
 At this stage:
 
-1. Define the active requirement.
-2. Define the executable spec.
-3. Define the current architecture direction.
-4. Define the active boundary contract.
-5. Require `PDR` before implementation.
+1. define one currently valid requirement
+2. define one currently executable spec
+3. define one current architecture direction
+4. define one current boundary contract
+5. require `PDR` before implementation
 
-## Phase 2: Establish Stop Rules
+If you can do this much, your AI delivery loop is already safer than most teams.
 
-After the minimum set exists, agree on stop conditions.
+## Phase 2: Establish Stop Conditions
 
-Stop execution when:
+Once the minimum document set exists, start enforcing stop rules.
+
+The team must agree that execution stops whenever any of the following happens:
 
 - `SPEC_STEP` conflicts with `REQ`
 - implementation direction conflicts with `ADR`
 - proposed work violates `CONTRACT`
 - key information is missing
 
-## Phase 3: Keep Useful Lessons
+From this point on, the system changes not only the documents, but team behavior.
 
-Once the team uses `PDR` reliably, start writing `REFLECT`.
+## Phase 3: Preserve Learning
 
-Record only lessons worth preserving:
+Once the team is using `PDR` steadily, start using `REFLECT` to preserve meaningful experience.
+
+Do not record everything.
+
+Record only what is actually worth keeping:
 
 - repeated misunderstandings
 - bugs caused by document mismatch
 - recurring boundary violations
-- execution patterns that should affect future governance
+- execution patterns that should influence future governance
 
 ## Phase 4: Upgrade Governance Deliberately
 
-When patterns repeat, create `SUGGEST`.
+When patterns begin to repeat, create `SUGGEST`.
 
-This step turns local experience into a governance proposal. Governance upgrades must go through human approval.
+This step is the bridge between local experience and formal governance.
+
+Governance upgrades can only happen through human-approved `GU`.
+
+This matters because it keeps the system from destabilizing every time it learns something new.
 
 ## Team Responsibilities
 
-Different teams can assign responsibilities differently, but someone must own:
+Different teams may assign roles differently, but these responsibilities must be owned by someone:
 
-- requirement quality
-- implementation path quality
-- architecture direction
-- boundary control
-- conflict escalation
+- someone owns requirement truth
+- someone owns architecture direction
+- someone owns hard boundary definition
+- someone executes or approves pre-development review
+- someone decides whether proposals become formal governance
+
+This model does not require a rigid org chart, but it does require clear decision ownership.
+
+## Common Adoption Mistakes
+
+Avoid these mistakes:
+
+- writing many templates before defining decision ownership
+- treating `ADR` as implementation detail
+- writing `CONTRACT` as a long technical memo instead of hard boundaries
+- recording everything in `REFLECT`
+- letting `SUGGEST` behave like formal governance before approval
+- continuing implementation after conflict is already visible
+
+## What Good Adoption Looks Like
+
+When you see these conditions, adoption is moving in the right direction:
+
+- agents do not start work before alignment review
+- conflicts lead to escalation instead of improvisation
+- architecture and boundaries stay visible throughout delivery
+- lessons are preserved without bypassing formal governance
+- the team can clearly explain why a decision was allowed, blocked, or upgraded
+
+## Recommended Adoption Order
+
+For most teams, this order is enough:
+
+1. publish `README.md`
+2. create the minimum document set
+3. require `PDR`
+4. apply stop rules
+5. start using templates
+6. record meaningful `REFLECT`
+7. use `SUGGEST` to inspect repeated patterns
+8. upgrade governance through approved `GU`
