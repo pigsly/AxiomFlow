@@ -2,41 +2,41 @@
 
 [中文](../zh/use-cases.md)
 
-AxiomFlow fits environments where AI speed can create governance risk.
+This model is most suitable for environments where AI speed has already become capable of creating governance risk in return.
 
-## AI Delivery Teams
+## AI Agent Delivery Teams
 
-If agents write code, draft specs, or update system documents, weak alignment can scale mistakes as fast as output.
+When a team is already using agents to write code, generate specs, and update system documents, once alignment loosens, speed can amplify mistakes together with output.
 
-AxiomFlow gives these teams controlled execution instead of agent-only judgment.
+AxiomFlow gives these teams not more documents, but a controlled execution model that does not rely only on agent judgment.
 
 ## Multi-Milestone Products
 
 Products that evolve across milestones often accumulate:
 
 - conflicting assumptions
-- outdated architecture decisions
-- undocumented boundary drift
+- outdated architectural decisions
+- boundary shifts that were never written down
 
-AxiomFlow keeps one active direction per milestone while preserving one formal source for architecture and boundaries.
+The role of this system is to keep each milestone's direction clear while preserving one formal source of truth for architecture and boundaries.
 
 ## Document-Driven Engineering
 
-If your organization already works through requirements, specs, and architecture documents, AxiomFlow adds:
+If your organization already depends on requirements, specs, and architecture documents, this model adds:
 
 - trust order
 - stop conditions
 - upgrade paths
 
-It turns static documents into an operating system for delivery.
+It turns static documents into an operating system that can actually drive execution.
 
-## Learning-Heavy Teams
+## Learning-Heavy Organizations
 
-Some teams repeat the same failures:
+Some teams keep running into the same kinds of failures repeatedly:
 
 - handoff mistakes
 - spec drift
-- unclear ownership
-- broken system boundaries
+- responsibility confusion
+- system boundaries being crossed
 
-AxiomFlow gives those teams a path to turn repeated mistakes into governance assets.
+What this framework gives those teams is a path for turning repeated mistakes into governance assets.
