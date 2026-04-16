@@ -62,3 +62,10 @@ Use only the roles you need for the current stage.
 
 - English docs: [docs/en](./docs/en/README.md)
 - 中文文件: [docs/zh](./docs/zh/getting-started.md)
+
+## Community
+
+- GitHub Issues: https://github.com/pigsly/AxiomFlow/issues
+- X.com @pigslybear
+- Contributing: [docs/en/CONTRIBUTING.md](./docs/en/CONTRIBUTING.md)
+- Related project: [ClawMind](https://github.com/pigsly/ClawMind)

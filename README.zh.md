@@ -63,5 +63,12 @@ AxiomFlow 是一套面向 AI 輔助軟體交付的治理模型。
 
 - English docs: [docs/en](./docs/en/README.md)
 - 中文文件: [docs/zh](./docs/zh/getting-started.md)
+ 
+## Community
+
+- GitHub Issues: https://github.com/pigsly/AxiomFlow/issues
+- X.com @pigslybear
+- Contributing: [docs/zh/CONTRIBUTING.md](./docs/zh/CONTRIBUTING.md)
+- Related project: [ClawMind](https://github.com/pigsly/ClawMind)
   
   
