@@ -4,12 +4,45 @@
 
 **Turn AI agents into governable builders.**
 
+> Bound acceleration. Trace evolution.
+
 AxiomFlow is a governance model for AI-assisted software delivery.
 
 It is designed to keep AI-accelerated execution aligned, bounded, and traceable.
 
-> Bound acceleration. Trace evolution.
+## BEFORE
 
+AI helps teams rapidly produce requirements, proposals, code, and documentation.
+At first, everything feels fast. But after a few weeks, the real problems start to surface:
+
+- requirements, design, and architectural decisions get mixed together, making the project harder and harder to reason about later
+- many important judgments seem reasonable in the moment, but later nobody can clearly explain why they were made
+- boundaries and constraints are never written down clearly, and exist only in a few people's heads
+- when new members take over, they can see the output but cannot reconnect the context
+- AI can always produce content, but the standard is inconsistent, so the team keeps compensating afterward
+
+In the end, the project looks like it is moving forward,
+but in reality it is accelerating the spread of confusion.
+
+## AFTER
+
+AxiomFlow does not add one more layer of process.
+
+It separates the different layers of project problems so they can be governed independently:
+
+- `REQ`: what problem is actually being solved right now
+- `SPEC`: how this work is going to be implemented
+- `ADR`: why this direction was chosen instead of another one
+- `CONTRACT`: which boundaries must not be crossed and which principles must not be broken
+
+Once the problem, method, reasoning, and boundaries are separated clearly,
+AI is no longer just producing more output.
+
+It starts helping the project move forward in a way that is understandable, verifiable, and transferable.
+
+The result is not that AI becomes slower.
+
+It is that the more AI does, the more the team understands what it is doing.
 ## Start Here
 
 Use this short path if you are new to the repo.

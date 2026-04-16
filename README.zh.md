@@ -10,7 +10,36 @@ AxiomFlow 是一套面向 AI 輔助軟體交付的治理模型。
 
 它的目標，是讓 AI 加速下的執行仍然保持對齊、有邊界、且可追溯。
 
+## BEFORE
 
+AI 幫團隊快速產出需求、方案、程式與文件。
+一開始大家都覺得很快，但過幾週之後，真正的問題才開始浮出來：
+
+- 需求、設計、架構決策混在一起，越做越難回頭看
+- 很多重要判斷當下看似合理，之後卻沒人說得清為什麼
+- 邊界與限制沒有被明確寫下來，只存在少數人腦中
+- 新成員接手時，看得到結果，接不起脈絡
+- AI 每次都能產出內容，但標準不一致，團隊只能一直補救
+
+最後專案看起來在推進，
+其實是在用更快的速度，把混亂一起放大。
+
+## AFTER
+
+AxiomFlow 不是再多加一層流程，
+而是先把專案裡不同層次的問題拆開來治理：
+
+- `REQ`：現在真正要解的是什麼問題
+- `SPEC`：這次準備怎麼落地
+- `ADR`：為什麼選這個方向，而不是別的方向
+- `CONTRACT`：有哪些邊界不能踩、哪些原則不能破
+
+當問題、做法、理由、邊界被分清楚之後，
+AI 就不再只是一直輸出內容，
+而是開始沿著可理解、可驗證、可接手的方式推進專案。
+
+結果不是讓 AI 變慢，
+而是讓 AI 做得越多，團隊反而越知道它在做什麼。
 ## 從這裡開始
 
 如果你是第一次看這個 repo，先走這條短路徑。
@@ -61,12 +90,10 @@ AxiomFlow 是一套面向 AI 輔助軟體交付的治理模型。
 
 - English docs: [docs/en](./docs/en/README.md)
 - 中文文件: [docs/zh](./docs/zh/getting-started.md)
- 
+
 ## Community
 
 - GitHub Issues: https://github.com/pigsly/AxiomFlow/issues
 - X.com @pigslybear
 - Contributing: [docs/zh/CONTRIBUTING.md](./docs/zh/CONTRIBUTING.md)
 - Related project: [ClawMind](https://github.com/pigsly/ClawMind)
-  
-  
