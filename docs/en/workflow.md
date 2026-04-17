@@ -10,6 +10,12 @@ This loop does three things only: verify alignment before execution, preserve le
 
 `PDR` means Pre-Development Review.
 
+It is not one more formal step. It confirms, before work starts, whether this work should continue and whether the direction is clear.
+
+AI is a mirror. If you are clear, the agent amplifies that clarity. If you are vague, it amplifies that vagueness and drives the wrong direction deeper, faster.
+
+So the real job of `PDR` is to force you to answer: what do you actually want? This is where your real learning begins.
+
 It must happen before all of the following:
 
 - analysis

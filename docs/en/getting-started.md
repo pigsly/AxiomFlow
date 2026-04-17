@@ -6,7 +6,7 @@ This page is not about theory. It is about how to bring AxiomFlow into a new pro
 
 It applies to workflows that use `Codex CLI` or `Copilot in VS Code` as the main operating entrypoint.
 
-## Setup First: `AGENTS.md`
+## First Thing: `AGENTS.md`
 
 When you adopt AxiomFlow into another repo, create or update that repo's `AGENTS.md` before you start organizing document structure.
 
@@ -99,7 +99,7 @@ You do not need to deploy the entire system on day one.
 
 You only need enough structure to stop uncontrolled execution.
 
-## PDR Rule
+## Second Thing: `PDR` Rule
 
 Run `PDR` before all of the following:
 
@@ -108,9 +108,11 @@ Run `PDR` before all of the following:
 - code generation
 - document updates
 
-The first gain from this system is not more documentation.
+`PDR` is not one more process step. It confirms, before work starts, whether this work should continue and whether the direction is clear.
 
-The first gain is that work which should not continue gets stopped early.
+AI is a mirror. If you are clear, the agent amplifies that clarity. If you are vague, it amplifies that vagueness and drives the wrong direction deeper, faster.
+
+So what `PDR` really does is force you to answer: what do you actually want? This is where your real learning begins.
 
 ## How to Operate by Adoption Order
 
