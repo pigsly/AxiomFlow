@@ -68,12 +68,9 @@ This is the product value in one view:
 - AxiomFlow does not only help teams write specs
 - it helps teams decide whether a spec should proceed at all
 
-<details>
-<summary><code>SPEC-001</code> snapshot</summary>
 
 ![PDR SPEC-001](./pic/PDR_SPEC001_EN.png)
 
-</details>
 
 <details>
 <summary><code>SPEC-002</code> snapshot</summary>
