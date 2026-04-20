@@ -1,5 +1,10 @@
 # AxiomFlow
 
+[![License](https://img.shields.io/github/license/pigsly/AxiomFlow)](./LICENSE)
+[![Site](https://img.shields.io/badge/site-GitHub%20Pages-0b7285)](https://pigsly.github.io/AxiomFlow/)
+[![Workflow](https://img.shields.io/github/actions/workflow/status/pigsly/AxiomFlow/static.yml?branch=main&label=workflow)](https://github.com/pigsly/AxiomFlow/actions/workflows/static.yml)
+[![EN/ZH](https://img.shields.io/badge/language-EN%20%2F%20ZH-2f9e44)](./README.zh.md)
+
 ![AxiomFlow logo](./AxiomFlow_logo.png)
 
 **Turn AI agents into governable builders.**
