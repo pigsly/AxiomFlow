@@ -22,6 +22,12 @@
       content="Turn governance into a visible execution decision. See how PDR catches poker spec conflicts before implementation starts."
     />
     <meta name="twitter:image" content="./assets/axiomflow-og-v3.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -52,8 +58,22 @@
         </div>
 
         <aside class="hero-panel">
-          <p class="mini-label">Core Loop</p>
-          <p class="loop">REQ → SPEC → PDR → WC → REFLECT → SUGGEST → GU</p>
+          <p class="mini-label">Governance Console</p>
+          <p class="loop">REQ → SPEC → <span>PDR</span> → WC → REFLECT → SUGGEST → GU</p>
+          <div class="hero-status">
+            <div class="status-head">
+              <span class="status-chip">PDR Active</span>
+              <span class="status-note">Pre-implementation gate</span>
+            </div>
+            <div class="status-grid">
+              <span>Requirement truth</span>
+              <strong>Checked</strong>
+              <span>Architecture direction</span>
+              <strong>Checked</strong>
+              <span>Hard boundaries</span>
+              <strong>Checked</strong>
+            </div>
+          </div>
           <ul class="hero-points">
             <li><strong>PDR</strong> checks alignment before execution.</li>
             <li><strong>Conflict Handling</strong> stops drift before code lands.</li>
@@ -73,21 +93,21 @@
           </p>
         </div>
         <div class="why-grid">
-          <article class="info-card">
+          <article class="info-card wide">
             <h3>More output is no longer the bottleneck</h3>
             <p>
               Agents can draft plans, code, and documents in minutes. The risk
               moves upstream into decision quality.
             </p>
           </article>
-          <article class="info-card">
+          <article class="info-card spotlight">
             <h3>Small drift compounds faster now</h3>
             <p>
               A wrong assumption in <code>SPEC</code> can quickly become wrong
               code, wrong tests, wrong docs, and wrong future decisions.
             </p>
           </article>
-          <article class="info-card">
+          <article class="info-card offset">
             <h3>Governance must become operational</h3>
             <p>
               If alignment only lives in meetings or memory, it loses to speed.
@@ -103,15 +123,15 @@
           <h2>A small poker story makes the governance decision obvious.</h2>
         </div>
         <div class="intro-grid">
-          <article class="info-card">
+          <article class="info-card intro-lead">
             <h3>Case 1</h3>
             <p>The base spec stays aligned with the approved 52-card game.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card intro-mid">
             <h3>Case 2</h3>
             <p>A scoring change looks harmless, but it silently rewrites the requirement.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card intro-tail">
             <h3>Case 3</h3>
             <p>A Joker feature sounds fun, but it breaks the current boundary outright.</p>
           </article>
@@ -142,7 +162,9 @@
               <pre><code>PDR SPEC-001</code></pre>
             </div>
             <div class="demo-image">
-              <img src="./assets/PDR_SPEC001_EN.png" alt="PDR SPEC-001 status" />
+              <div class="image-frame">
+                <img src="./assets/PDR_SPEC001_EN.png" alt="PDR SPEC-001 status" />
+              </div>
             </div>
           </article>
 
@@ -159,7 +181,9 @@
               <pre><code>PDR SPEC-002</code></pre>
             </div>
             <div class="demo-image">
-              <img src="./assets/PDR_SPEC002_EN.png" alt="PDR SPEC-002 status" />
+              <div class="image-frame">
+                <img src="./assets/PDR_SPEC002_EN.png" alt="PDR SPEC-002 status" />
+              </div>
             </div>
           </article>
 
@@ -176,7 +200,9 @@
               <pre><code>PDR SPEC-003</code></pre>
             </div>
             <div class="demo-image">
-              <img src="./assets/PDR_SPEC003_EN.png" alt="PDR SPEC-003 status" />
+              <div class="image-frame">
+                <img src="./assets/PDR_SPEC003_EN.png" alt="PDR SPEC-003 status" />
+              </div>
             </div>
           </article>
         </div>
@@ -188,15 +214,15 @@
           <h2>Not just documentation. Operational judgment.</h2>
         </div>
         <div class="summary-grid">
-          <article class="summary-card">
+          <article class="summary-card lead">
             <h3>Before code</h3>
             <p>Alignment is checked against requirement truth, architecture truth, and hard boundaries.</p>
           </article>
-          <article class="summary-card">
+          <article class="summary-card compact">
             <h3>At decision time</h3>
             <p>The system does not only warn. It can visibly signal when work should stop.</p>
           </article>
-          <article class="summary-card">
+          <article class="summary-card wide">
             <h3>For humans</h3>
             <p>Status output makes the decision fast to read, easy to review, and hard to ignore.</p>
           </article>
@@ -213,8 +239,8 @@
           </p>
         </div>
         <div class="footer-actions">
-          <a class="button primary" href="https://github.com/pigsly/AxiomFlow/blob/main/Tenets/en//README.md">GitHub README</a>
-          <a class="button secondary" href="https://github.com/pigsly/AxiomFlow/">Working Samples</a>
+          <a class="button primary" href="https://github.com/pigsly/AxiomFlow/blob/main/README.md">GitHub README</a>
+          <a class="button secondary" href="https://github.com/pigsly/AxiomFlow/tree/main/docs">Working Samples</a>
           <a class="button secondary" href="https://github.com/pigsly/AxiomFlow/blob/main/Tenets/en/why-this-works.md">Why AxiomFlow</a>
         </div>
       </section>
