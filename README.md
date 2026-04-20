@@ -71,13 +71,25 @@ This is the product value in one view:
 
 ### `SPEC-001`
 
+```text
+PDR SPEC-001
+```
+
 <img src="./pic/PDR_SPEC001_EN.png" width="820" alt="PDR SPEC-001" />
 
 ### `SPEC-002`
 
+```text
+PDR SPEC-002
+```
+
 <img src="./pic/PDR_SPEC002_EN.png" width="820" alt="PDR SPEC-002" />
 
 ### `SPEC-003`
+
+```text
+PDR SPEC-003
+```
 
 <img src="./pic/PDR_SPEC003_EN.png" width="820" alt="PDR SPEC-003" />
 
