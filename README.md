@@ -69,22 +69,17 @@ This is the product value in one view:
 - it helps teams decide whether a spec should proceed at all
 
 
-![PDR SPEC-001](./pic/PDR_SPEC001_EN.png)
+### `SPEC-001`
 
+<img src="./pic/PDR_SPEC001_EN.png" width="820" alt="PDR SPEC-001" />
 
-<details>
-<summary><code>SPEC-002</code> snapshot</summary>
+### `SPEC-002`
 
-![PDR SPEC-002](./pic/PDR_SPEC002_EN.png)
+<img src="./pic/PDR_SPEC002_EN.png" width="820" alt="PDR SPEC-002" />
 
-</details>
+### `SPEC-003`
 
-<details>
-<summary><code>SPEC-003</code> snapshot</summary>
-
-![PDR SPEC-003](./pic/PDR_SPEC003_EN.png)
-
-</details>
+<img src="./pic/PDR_SPEC003_EN.png" width="820" alt="PDR SPEC-003" />
 
 ## Start Here
 

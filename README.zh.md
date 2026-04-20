@@ -70,26 +70,17 @@ AxiomFlow 不是再多加一層流程。
 - AxiomFlow 不只幫團隊寫出 spec
 - 它還幫團隊判斷這份 spec 到底能不能開始做
 
-<details>
-<summary><code>SPEC-001</code> 範例畫面</summary>
+### `SPEC-001`
 
-![PDR SPEC-001](./pic/PDR_SPEC001_ZH.png)
+<img src="./pic/PDR_SPEC001_ZH.png" width="820" alt="PDR SPEC-001" />
 
-</details>
+### `SPEC-002`
 
-<details>
-<summary><code>SPEC-002</code> 範例畫面</summary>
+<img src="./pic/PDR_SPEC002_ZH.png" width="820" alt="PDR SPEC-002" />
 
-![PDR SPEC-002](./pic/PDR_SPEC002_ZH.png)
+### `SPEC-003`
 
-</details>
-
-<details>
-<summary><code>SPEC-003</code> 範例畫面</summary>
-
-![PDR SPEC-003](./pic/PDR_SPEC003_ZH.png)
-
-</details>
+<img src="./pic/PDR_SPEC003_ZH.png" width="820" alt="PDR SPEC-003" />
 
 ## 從這裡開始
 
