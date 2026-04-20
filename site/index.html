@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AxiomFlow</title>
+    <meta
+      name="description"
+      content="AxiomFlow turns governance into a visible go / stop decision. See how PDR catches poker spec conflicts before implementation starts."
+    />
+    <meta property="og:title" content="AxiomFlow" />
+    <meta
+      property="og:description"
+      content="Turn governance into a visible execution decision. See how PDR catches poker spec conflicts before implementation starts."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/axiomflow-og-v3.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AxiomFlow" />
+    <meta
+      name="twitter:description"
+      content="Turn governance into a visible execution decision. See how PDR catches poker spec conflicts before implementation starts."
+    />
+    <meta name="twitter:image" content="./assets/axiomflow-og-v3.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AxiomFlow</p>
+          <h1>Turn governance into a visible execution decision.</h1>
+          <p class="lede">
+            AI can write code fast. AxiomFlow makes sure it does not run in the
+            wrong direction first.
+          </p>
+          <p class="body-copy">
+            This demo uses a simple poker game to show what <code>PDR</code>
+            actually does: not more paperwork, but a real go / review / stop
+            checkpoint before implementation starts.
+          </p>
+          <ul class="hero-list">
+            <li>Catch requirement drift before code lands.</li>
+            <li>Expose boundary conflicts before teams build the wrong thing.</li>
+            <li>Show the decision in a terminal-friendly status layout.</li>
+          </ul>
+          <div class="actions">
+            <a class="button primary" href="../README.md">Read the Repo</a>
+            <a class="button secondary" href="#demo">See the Demo</a>
+            <a class="button secondary" href="../Tenets/en/getting-started.md">Getting Started</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <p class="mini-label">Core Loop</p>
+          <p class="loop">REQ → SPEC → PDR → WC → REFLECT → SUGGEST → GU</p>
+          <ul class="hero-points">
+            <li><strong>PDR</strong> checks alignment before execution.</li>
+            <li><strong>Conflict Handling</strong> stops drift before code lands.</li>
+            <li><strong>Status output</strong> makes the decision readable in seconds.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section why-now">
+        <div>
+          <p class="section-kicker">Why Now</p>
+          <h2>AI made execution cheap. Misalignment became the expensive part.</h2>
+          <p class="story-copy">
+            Teams no longer struggle to get output. They struggle to keep fast
+            output aligned with approved requirements, architecture direction,
+            and hard boundaries.
+          </p>
+        </div>
+        <div class="why-grid">
+          <article class="info-card">
+            <h3>More output is no longer the bottleneck</h3>
+            <p>
+              Agents can draft plans, code, and documents in minutes. The risk
+              moves upstream into decision quality.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Small drift compounds faster now</h3>
+            <p>
+              A wrong assumption in <code>SPEC</code> can quickly become wrong
+              code, wrong tests, wrong docs, and wrong future decisions.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Governance must become operational</h3>
+            <p>
+              If alignment only lives in meetings or memory, it loses to speed.
+              It has to become part of the execution path.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div>
+          <p class="section-kicker">Why this example works</p>
+          <h2>A small poker story makes the governance decision obvious.</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="info-card">
+            <h3>Case 1</h3>
+            <p>The base spec stays aligned with the approved 52-card game.</p>
+          </article>
+          <article class="info-card">
+            <h3>Case 2</h3>
+            <p>A scoring change looks harmless, but it silently rewrites the requirement.</p>
+          </article>
+          <article class="info-card">
+            <h3>Case 3</h3>
+            <p>A Joker feature sounds fun, but it breaks the current boundary outright.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section story-block" id="demo">
+        <div class="story-head">
+          <p class="section-kicker">PDR Demo</p>
+          <h2>Poker story on the left. PDR decision on the right.</h2>
+          <p class="story-copy">
+            Each case uses the same governance system. Only the spec changes.
+            That is the point: AxiomFlow does not guess whether work is safe to
+            continue. It evaluates it.
+          </p>
+        </div>
+
+        <div class="demo-grid">
+          <article class="demo-card">
+            <div class="demo-copy">
+              <p class="case-label case-ok">Proceed</p>
+              <h3>`SPEC-001` keeps the original poker contract intact.</h3>
+              <p>
+                The team wants a minimal single-player poker game: 52-card deck,
+                5-card rounds, one exchange, three rounds, score threshold.
+                Nothing new is invented. Nothing crosses the approved boundary.
+              </p>
+              <pre><code>PDR SPEC-001</code></pre>
+            </div>
+            <div class="demo-image">
+              <img src="./assets/PDR_SPEC001_EN.png" alt="PDR SPEC-001 status" />
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-copy">
+              <p class="case-label case-review">REQ Conflict</p>
+              <h3>`SPEC-002` changes scoring before the requirement is updated.</h3>
+              <p>
+                The feature request sounds tiny: raise <code>Full House</code>
+                from 5 points to 6. But the current <code>REQ</code> still says
+                5. PDR catches the mismatch before implementation turns it into
+                silent drift.
+              </p>
+              <pre><code>PDR SPEC-002</code></pre>
+            </div>
+            <div class="demo-image">
+              <img src="./assets/PDR_SPEC002_EN.png" alt="PDR SPEC-002 status" />
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-copy">
+              <p class="case-label case-stop">Boundary Conflict</p>
+              <h3>`SPEC-003` adds Joker and breaks the current contract.</h3>
+              <p>
+                The new idea is bigger: add <code>Joker</code> as a wildcard.
+                But the current system truth says 52 cards only, and the
+                contract forbids adding more cards. PDR blocks execution before
+                the team builds the wrong game.
+              </p>
+              <pre><code>PDR SPEC-003</code></pre>
+            </div>
+            <div class="demo-image">
+              <img src="./assets/PDR_SPEC003_EN.png" alt="PDR SPEC-003 status" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section summary">
+        <div>
+          <p class="section-kicker">What AxiomFlow actually gives you</p>
+          <h2>Not just documentation. Operational judgment.</h2>
+        </div>
+        <div class="summary-grid">
+          <article class="summary-card">
+            <h3>Before code</h3>
+            <p>Alignment is checked against requirement truth, architecture truth, and hard boundaries.</p>
+          </article>
+          <article class="summary-card">
+            <h3>At decision time</h3>
+            <p>The system does not only warn. It can visibly signal when work should stop.</p>
+          </article>
+          <article class="summary-card">
+            <h3>For humans</h3>
+            <p>Status output makes the decision fast to read, easy to review, and hard to ignore.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section footer-callout">
+        <div>
+          <p class="section-kicker">Start here</p>
+          <h2>Use the repo as the working system.</h2>
+          <p class="story-copy">
+            The landing page shows the product idea. The repo gives you the
+            working system, the documents, and the samples.
+          </p>
+        </div>
+        <div class="footer-actions">
+          <a class="button primary" href="../README.md">GitHub README</a>
+          <a class="button secondary" href="../docs/">Working Samples</a>
+          <a class="button secondary" href="../Tenets/en/getting-started.md">Adopt AxiomFlow</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

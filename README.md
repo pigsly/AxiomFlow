@@ -10,6 +10,8 @@ AxiomFlow is a governance model for AI-assisted software delivery.
 
 It helps teams keep AI-driven execution aligned, bounded, and traceable before speed turns into drift.
 
+Live landing page: [site/](./site/)
+
 ## Why It Exists
 
 AI can generate requirements, plans, code, and documents at high speed.
