@@ -8,95 +8,127 @@
 
 AxiomFlow is a governance model for AI-assisted software delivery.
 
-It is designed to keep AI-accelerated execution aligned, bounded, and traceable.
+It helps teams keep AI-driven execution aligned, bounded, and traceable before speed turns into drift.
 
-## BEFORE
+## Why It Exists
 
-AI helps teams rapidly produce requirements, proposals, code, and documentation.
-At first, everything feels fast. But after a few weeks, the real problems start to surface:
+AI can generate requirements, plans, code, and documents at high speed.
 
-- requirements, design, and architectural decisions get mixed together, making the project harder and harder to reason about later
-- many important judgments seem reasonable in the moment, but later nobody can clearly explain why they were made
-- boundaries and constraints are never written down clearly, and exist only in a few people's heads
-- when new members take over, they can see the output but cannot reconnect the context
-- AI can always produce content, but the standard is inconsistent, so the team keeps compensating afterward
+That speed is useful until teams lose control of:
 
-In the end, the project looks like it is moving forward,
-but in reality it is accelerating the spread of confusion.
+- what problem is actually being solved
+- why a direction was chosen
+- which boundaries are non-negotiable
+- whether the current work is still aligned with approved intent
 
-## AFTER
+The result is familiar: delivery appears to move faster, but confusion scales with it.
 
-AxiomFlow does not add one more layer of process.
+AxiomFlow is designed to prevent that failure mode.
 
-It separates the different layers of project problems so they can be governed independently:
+## What AxiomFlow Changes
 
-- `REQ`: what problem is actually being solved right now
-- `SPEC`: how this work is going to be implemented
-- `ADR`: why this direction was chosen instead of another one
-- `CONTRACT`: which boundaries must not be crossed and which principles must not be broken
+AxiomFlow does not add process for its own sake.
 
-Once the problem, method, reasoning, and boundaries are separated clearly,
-AI is no longer just producing more output.
-
-It starts helping the project move forward in a way that is understandable, verifiable, and transferable.
-
-The result is not that AI becomes slower.
-
-It is that the more AI does, the more the team understands what it is doing.
-## Start Here
-
-Use this short path if you are new to the repo.
-
-- [中文 README](./README.zh.md)
-- [Getting Started](./docs/en/getting-started.md)
-- [Version Guide](./docs/en/project-scale.md)
-- [Upgrade Signals](./docs/en/upgrade-signals.md)
-
-## Document Roles
-
-Each document answers one question:
+It separates different kinds of project decisions so they can be governed explicitly:
 
 - `REQ`: what problem must be solved
-- `SPEC`: how the work will be done
-- `ADR`: why the architecture is taking this direction
+- `SPEC`: how the work will be executed
+- `ADR`: why this direction was chosen
 - `CONTRACT`: which boundaries must not be crossed
-- `REFLECT`: which lessons are worth keeping
-- `SUGGEST`: which lessons may need a governance upgrade
+- `REFLECT`: which lessons are worth preserving
+- `SUGGEST`: which repeated lessons may deserve a governance upgrade
 
-Use only the roles you need for the current stage.
+When those layers are separated, AI stops acting like a fast content generator and starts acting like a controllable delivery system.
 
-## Choose a Version
+## Current Capability
 
-- [Simple](./docs/en/README.simple.md): for local, low-conflict work that mainly needs alignment before execution
-- [Standard](./docs/en/README.standard.md): for teams that need to preserve repeated lessons through `REFLECT`
-- [Advanced](./docs/en/README.advanced.md): for cases where repeated patterns need to be evaluated as `ADR` or `CONTRACT` candidates
-- [Professional](./docs/en/README.professional.md): for high-conflict environments that require formal approval and stop authority
+Today, AxiomFlow `PDR` is more than a pre-work checklist.
 
-## Read by Topic
+It can:
 
-- Start the repo setup: [Getting Started](./docs/en/getting-started.md)
-- Understand the document roles: [Core Concepts](./docs/en/concepts.md)
-- See the execution loop: [Workflow](./docs/en/workflow.md)
-- Learn when work must stop: [Conflict Handling](./docs/en/conflict-handling.md)
-- See how learning feeds governance: [Feedback Loop](./docs/en/feedback-loop.md)
-- Know when teams should upgrade: [Upgrade Signals](./docs/en/upgrade-signals.md)
-- Choose the right operating version: [Version Guide](./docs/en/project-scale.md)
-- Learn how to adopt it in a real team: [Adoption Guide](./docs/en/adoption-guide.md)
-- See where it fits best: [Use Cases](./docs/en/use-cases.md)
-- Understand why the model works: [Why This Works](./docs/en/why-this-works.md)
-- Read the formal rules last: [Governance.md](./docs/en/Governance.md)
-- Check common questions: [FAQ](./docs/en/faq.md)
-- Review practical samples: [Examples](./docs/en/examples/README.md)
-- See contribution guidance: [Contributing](./docs/en/CONTRIBUTING.md)
+- detect governance conflicts before implementation
+- stop execution when `REQ`, `ADR`, or `CONTRACT` boundaries are violated
+- render a terminal status layout for fast human review
+- make the reason to proceed, review, or stop visible before `WC`
+
+This matters because teams do not need more output. They need earlier judgment.
+
+## PDR In Action
+
+These examples show how the same governance layer produces different outcomes for different specs.
+
+| Spec | Signal | What PDR found |
+| --- | --- | --- |
+| `SPEC-001` | `OK` | aligned with `REQ`, `ADR`, and `CONTRACT` |
+| `SPEC-002` | `Conflict Detected` | changes scoring without updating `REQ` |
+| `SPEC-003` | `Conflict Detected` | adds `Joker` and violates the current deck boundary |
+
+This is the product value in one view:
+
+- AxiomFlow does not only help teams write specs
+- it helps teams decide whether a spec should proceed at all
+
+<details>
+<summary><code>SPEC-001</code> snapshot</summary>
+
+![PDR SPEC-001](./pic/PDR_SPEC001_EN.png)
+
+</details>
+
+<details>
+<summary><code>SPEC-002</code> snapshot</summary>
+
+![PDR SPEC-002](./pic/PDR_SPEC002_EN.png)
+
+</details>
+
+<details>
+<summary><code>SPEC-003</code> snapshot</summary>
+
+![PDR SPEC-003](./pic/PDR_SPEC003_EN.png)
+
+</details>
+
+## Start Here
+
+If this is your first time in the repo, use this short path:
+
+- [中文 README](./README.zh.md)
+- [Getting Started](./Tenets/en/getting-started.md)
+- [Version Guide](./Tenets/en/project-scale.md)
+- [Upgrade Signals](./Tenets/en/upgrade-signals.md)
+
+## Choose Your Operating Version
+
+- [Simple](./Tenets/en/README.simple.md): for low-conflict work that mainly needs alignment before execution
+- [Standard](./Tenets/en/README.standard.md): for teams that need to preserve repeated lessons through `REFLECT`
+- [Advanced](./Tenets/en/README.advanced.md): for teams evaluating whether recurring patterns should become `ADR` or `CONTRACT`
+- [Professional](./Tenets/en/README.professional.md): for high-conflict environments that require formal approval and stop authority
+
+## Read By Topic
+
+- [Getting Started](./Tenets/en/getting-started.md): set up the repo and the initial operating flow
+- [Core Concepts](./Tenets/en/concepts.md): understand role separation across `REQ`, `SPEC`, `ADR`, and `CONTRACT`
+- [Workflow](./Tenets/en/workflow.md): see the core loop from alignment to execution
+- [Conflict Handling](./Tenets/en/conflict-handling.md): learn when work must stop
+- [Feedback Loop](./Tenets/en/feedback-loop.md): see how experience feeds governance
+- [Upgrade Signals](./Tenets/en/upgrade-signals.md): know when the current operating model is no longer enough
+- [Adoption Guide](./Tenets/en/adoption-guide.md): apply AxiomFlow in a real team
+- [Use Cases](./Tenets/en/use-cases.md): see where the model fits best
+- [Why This Works](./Tenets/en/why-this-works.md): understand the operating logic behind the model
+- [Governance.md](./Tenets/en/Governance.md): read the formal rules
+- [Working Samples](./docs): inspect the English working sample set
+- [FAQ](./Tenets/en/faq.md): check common questions
+- [Contributing](./Tenets/en/CONTRIBUTING.md): contribute to the project
 
 ## Language
 
-- English docs: [docs/en](./docs/en/README.md)
-- 中文文件: [docs/zh](./docs/zh/getting-started.md)
+- English docs: [Tenets/en](./Tenets/en)
+- 中文文件: [Tenets/zh](./Tenets/zh/getting-started.md)
 
 ## Community
 
 - GitHub Issues: https://github.com/pigsly/AxiomFlow/issues
 - X.com @pigslybear
-- Contributing: [docs/en/CONTRIBUTING.md](./docs/en/CONTRIBUTING.md)
+- Contributing: [Tenets/en/CONTRIBUTING.md](./Tenets/en/CONTRIBUTING.md)
 - Related project: [ClawMind](https://github.com/pigsly/ClawMind)

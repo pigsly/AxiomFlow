@@ -22,7 +22,7 @@ These templates are intentionally lightweight. They are meant to preserve the ro
 If you adopt supporting ADR files, use this convention:
 
 ```text
-docs/
+Tenets/
   ADR.md
   adr/
     module-a-flow.md
@@ -30,5 +30,5 @@ docs/
 ```
 
 - `ADR.md` is the primary ADR source
-- files under `docs/adr/` are supporting ADR files
+- files under `Tenets/adr/` are supporting ADR files
 - supporting ADR files should be referenced from `ADR.md` before being treated as active governance
